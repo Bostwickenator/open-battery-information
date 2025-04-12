@@ -2,7 +2,7 @@
 
 ## Hardware
 
-This simple interface can be built using an Ardunio Uno and some external resistors. 
+This simple interface can be built using an Ardunio Uno, Nano, or other 5V ATmega328P board and some external resistors. 
 
 ![screenshot](../docs/images/arduino-obi.png)
 
@@ -20,8 +20,8 @@ Ensure you have the following installed on your system:
 
 3. **Git (OPTIONAL)**  
 
-4. **Arduino UNO**  
-   Ensure you have a working Arduino UNO board and a USB cable to connect it to your computer.
+4. **Arduino**  
+   Ensure you have a working Arduino board and a USB cable to connect it to your computer.
    Build the circuit according to the schematic.
 
 ---
@@ -53,10 +53,12 @@ Or,
   Under "General", click Build to compile the code.
   Check the output terminal for any errors. A successful build will show a "Success" message.
 
-## Step 4: Flash the Code to the Arduino UNO
+  Note: if using a board other than the Arduino Uno select the appropriate board in the platformio.ini file.
 
-  Connect your Arduino UNO to your computer using a USB cable.
+## Step 4: Flash the Code to the Arduino
+
+  Connect your Arduino to your computer using a USB cable.
   In the PlatformIO sidebar, go to the "Project Tasks" dropdown for uno.
   Under "General", click Upload.
-  PlatformIO will detect the correct port and upload the firmware to your Arduino UNO.
+  PlatformIO will detect the correct port and upload the firmware to your Arduino.
   A successful upload will display an "Upload complete" message in the terminal.
